@@ -244,33 +244,3 @@ I'm currently focused on building a strong foundation in **Data Structures & Alg
   </table>
 </div>
 
-<h2 align="center"></h2>
-
-<p align="center">
-  <img src="https://github.com/sanidhyy/sanidhyy/blob/output/github-contribution-grid-snake-dark.svg" />
-</p>
-
----
- ## My GitHub Activity
-
- <p align="center">
-  <img src="https://gitlyy.vercel.app/api/contribution?username=sabujghorai&hide_border=true" alt="GitHub Contribution Graph">
-</p>
-
----
-
-## 🎮 Interactive Contribution Graph (Activity Graph)
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=sabujghorai&theme=react-dark&hide_border=true" />
-</p>
-
----
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Thanks+for+visiting!+Let's+build+something+awesome+🚀" />
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=2800&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Thanks+for+visiting!+Let's+connect+and+build+something+awesome!" alt="Typing SVG" />
-</div>
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer" width="100%"/>
