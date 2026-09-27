@@ -2,882 +2,635 @@
 <html lang="en">
 
 <head>
+    <meta name="google-site-verification"content="g_C6CzL3JZu0Asc1TZ-Ldt9eim1cry84dw16eHSEhcU">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Search Verification -->
-    <meta name="google-site-verification"
-          content="g_C6CzL3JZu0Asc1TZ-Ldt9eim1cry84dw16eHSEhcU">
-
-    <!-- SEO -->
-    <title>Sabuj Ghorai | B.Tech CSE Student & Aspiring MLOps Engineer</title>
-
-    <meta name="description"
-          content="Sabuj Ghorai is a B.Tech Computer Science Engineering student and aspiring MLOps Engineer interested in Python, software development, cloud, DevOps and machine learning.">
-
-    <meta name="author" content="Sabuj Ghorai">
-
-    <link rel="canonical" href="https://sabujghorai.github.io/">
-
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="Sabuj Ghorai | Aspiring MLOps Engineer">
-
-    <meta property="og:description"
-          content="B.Tech CSE student building projects in Python, DevOps, Cloud and Machine Learning.">
-
-    <meta property="og:type" content="website">
-
-    <meta property="og:url"
-          content="https://sabujghorai.github.io/">
+    <title> Sabuj Ghorai | Portfolio</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!-- Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
 </head>
 
+<section class="reveal"></section>
 
 <body>
 
-    <!-- ================= NAVBAR ================= -->
+    <!-- NAVBAR -->
 
-    <header class="navbar">
-
-        <div class="nav-container">
+    <header class="header">
+        <nav class="navbar">
 
             <a href="#home" class="logo">
-                <span>&lt;</span>SG<span>/&gt;</span>
+                <div class="logo-box">SG</div>
+                <span>Sabuj<span class="accent">Ghorai</span></span>
             </a>
 
-            <nav id="nav-menu">
+            <ul class="nav-menu">
+                <li><a href="#about"> About</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#github">GitHub</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#journey">Journey</a>
-                <a href="#contact">Contact</a>
-
-            </nav>
-
-            <a href="#contact" class="nav-button">
-                Let's Talk
-            </a>
-
-            <button class="menu-btn" id="menu-btn">
+            <div class="menu-btn">
                 <i class="fa-solid fa-bars"></i>
-            </button>
+            </div>
 
-        </div>
-
+        </nav>
     </header>
 
+    <!-- background -->
 
-    <!-- ================= HERO ================= -->
+    <section id="home" class="hero">
 
-    <main>
+        <div class="hero-content">
 
-        <section class="hero" id="home">
+            <p class="hello">
+                👋 Hello, I'm
+            </p>
 
-            <div class="hero-bg"></div>
+            <h1>
+                Sabuj Ghorai
+            </h1>
 
-            <div class="hero-content">
+            <h2>
+                Python Developer • Developer • Future MLOps Engineer
+            </h2>
 
-                <div class="hero-text">
+            <p class="description">
 
-                    <div class="status">
-                        <span class="status-dot"></span>
-                        Available for opportunities
-                    </div>
+                Passionate Computer Science student learning
+                Python, DSA, Web Development, Linux,
+                Docker, Kubernetes and Cloud Technologies.
 
-                    <p class="small-heading">
-                        HELLO, I'M
-                    </p>
+                Building projects every day while preparing
+                for Software Engineering and MLOps internships.
 
-                    <h1>
-                        Sabuj <span>Ghorai</span>
-                    </h1>
+            </p>
 
-                    <h2>
-                        B.Tech CSE Student
-                        <span class="line"></span>
-                        Aspiring MLOps Engineer
-                    </h2>
+            <div class="hero-buttons">
 
-                    <p class="hero-description">
-                        I build software, explore cloud technologies and
-                        automate machine learning workflows. Currently
-                        focused on Python, DevOps, Cloud and Machine Learning.
-                    </p>
+                <a href="#projects" class="btn-primary">
 
-                    <div class="hero-buttons">
+                    View Projects
 
-                        <a href="#projects" class="btn primary-btn">
-                            View My Work
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                </a>
 
-                        <a href="#contact" class="btn secondary-btn">
-                            Contact Me
-                        </a>
+                <a href="#contact" class="btn-secondary">
 
-                    </div>
-
-                    <div class="social-links">
-
-                        <a href="https://github.com/sabujghorai"
-                           target="_blank"
-                           aria-label="GitHub">
-
-                            <i class="fa-brands fa-github"></i>
-
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/sabuj-ghorai/"
-                           target="_blank"
-                           aria-label="LinkedIn">
-
-                            <i class="fa-brands fa-linkedin-in"></i>
-
-                        </a>
-
-                        <a href="https://leetcode.com/u/sabuj_ghorai/"
-                           target="_blank"
-                           aria-label="LeetCode">
-
-                            <i class="fa-solid fa-code"></i>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- HERO VISUAL -->
-
-                <div class="hero-visual">
-
-                    <div class="orbit orbit-one"></div>
-                    <div class="orbit orbit-two"></div>
-
-                    <div class="code-card">
-
-                        <div class="window-top">
-
-                            <div class="window-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-
-                            <p>sabuj.py</p>
-
-                        </div>
-
-                        <div class="code">
-
-                            <p>
-                                <span class="purple">class</span>
-                                <span class="blue">Engineer</span>:
-                            </p>
-
-                            <p class="indent">
-                                <span class="purple">def</span>
-                                <span class="yellow">__init__</span>(self):
-                            </p>
-
-                            <p class="double-indent">
-                                self.name =
-                                <span class="green">
-                                    "Sabuj Ghorai"
-                                </span>
-                            </p>
-
-                            <p class="double-indent">
-                                self.role =
-                                <span class="green">
-                                    "MLOps Engineer"
-                                </span>
-                            </p>
-
-                            <p class="double-indent">
-                                self.skills =
-                                <span class="blue">
-                                    ["Python", "Cloud", "DevOps"]
-                                </span>
-                            </p>
-
-                            <p class="double-indent">
-                                self.goal =
-                                <span class="green">
-                                    "Build. Automate. Deploy."
-                                </span>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="scroll-down">
-
-                <span>SCROLL TO EXPLORE</span>
-
-                <i class="fa-solid fa-arrow-down"></i>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section class="section about" id="about">
-
-            <div class="section-heading">
-
-                <p>01 — ABOUT ME</p>
-
-                <h2>
-                    Turning curiosity into
-                    <span>technology.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-text">
-
-                    <p class="lead">
-                        I'm a Computer Science Engineering student
-                        passionate about building things with technology.
-                    </p>
-
-                    <p>
-                        My journey started with programming and gradually
-                        expanded into software development, databases,
-                        cloud computing, DevOps and machine learning.
-                    </p>
-
-                    <p>
-                        My long-term goal is to become an MLOps Engineer
-                        who can bridge the gap between machine learning
-                        models and reliable production systems.
-                    </p>
-
-                    <div class="about-stats">
-
-                        <div>
-                            <strong>8.2+</strong>
-                            <span>SGPA</span>
-                        </div>
-
-                        <div>
-                            <strong>365+</strong>
-                            <span>Days Learning</span>
-                        </div>
-
-                        <div>
-                            <strong>10+</strong>
-                            <span>Projects</span>
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <div class="card-icon">
-                        <i class="fa-solid fa-terminal"></i>
-                    </div>
-
-                    <h3>
-                        What I'm building
-                    </h3>
-
-                    <p>
-                        Software projects, automation systems,
-                        AI assistants and machine-learning infrastructure.
-                    </p>
-
-                    <div class="tech-tags">
-
-                        <span>Python</span>
-                        <span>Git</span>
-                        <span>Linux</span>
-                        <span>Docker</span>
-                        <span>Cloud</span>
-                        <span>ML</span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section class="section skills-section" id="skills">
-
-            <div class="section-heading">
-
-                <p>02 — SKILLS</p>
-
-                <h2>
-                    Technologies I
-                    <span>work with.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="skills-grid">
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-brands fa-python"></i>
-                    </div>
-
-                    <h3>Programming</h3>
-
-                    <p>
-                        Python, C, SQL, Data Structures &
-                        Algorithms
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-solid fa-database"></i>
-                    </div>
-
-                    <h3>Database</h3>
-
-                    <p>
-                        MySQL, SQL queries, database design
-                        and data management
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-brands fa-docker"></i>
-                    </div>
-
-                    <h3>DevOps</h3>
-
-                    <p>
-                        Git, GitHub, Docker, Linux,
-                        automation and CI/CD
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-solid fa-cloud"></i>
-                    </div>
-
-                    <h3>Cloud</h3>
-
-                    <p>
-                        Cloud fundamentals, deployment,
-                        infrastructure and services
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-
-                    <h3>Machine Learning</h3>
-
-                    <p>
-                        ML fundamentals, data analysis,
-                        NumPy and model workflows
-                    </p>
-
-                </div>
-
-
-                <div class="skill-card">
-
-                    <div class="skill-icon">
-                        <i class="fa-solid fa-gears"></i>
-                    </div>
-
-                    <h3>MLOps</h3>
-
-                    <p>
-                        Learning model deployment,
-                        monitoring and automation
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= PROJECTS ================= -->
-
-        <section class="section projects-section" id="projects">
-
-            <div class="section-heading">
-
-                <p>03 — PROJECTS</p>
-
-                <h2>
-                    Things I've
-                    <span>built.</span>
-                </h2>
-
-            </div>
-
-
-            <div class="projects-grid">
-
-
-                <article class="project-card featured">
-
-                    <div class="project-number">
-                        01
-                    </div>
-
-                    <div class="project-content">
-
-                        <span class="project-label">
-                            AI / AUTOMATION
-                        </span>
-
-                        <h3>
-                            M.I.R.A
-                        </h3>
-
-                        <p>
-                            A personal AI assistant designed to interact
-                            through voice, understand commands and provide
-                            an intelligent desktop experience.
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>Python</span>
-                            <span>AI</span>
-                            <span>Voice</span>
-                            <span>Automation</span>
-
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        02
-                    </div>
-
-                    <div class="project-content">
-
-                        <span class="project-label">
-                            HACKATHON
-                        </span>
-
-                        <h3>
-                            RAILBLOCK AI
-                        </h3>
-
-                        <p>
-                            AI-powered automatic block planning system
-                            designed to help maximize asset availability
-                            for railway operations.
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>Python</span>
-                            <span>Flask</span>
-                            <span>AI</span>
-                            <span>Dashboard</span>
-
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <div class="project-content">
-
-                        <span class="project-label">
-                            WEB DEVELOPMENT
-                        </span>
-
-                        <h3>
-                            Personal Portfolio
-                        </h3>
-
-                        <p>
-                            A responsive developer portfolio showcasing
-                            my projects, skills, learning journey and
-                            technical interests.
-                        </p>
-
-                        <div class="project-tech">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-
-                        </div>
-
-                        <a href="#" class="project-link">
-                            View Project
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-            <div class="github-banner">
-
-                <div>
-
-                    <i class="fa-brands fa-github"></i>
-
-                    <div>
-
-                        <h3>
-                            More projects on GitHub
-                        </h3>
-
-                        <p>
-                            Explore my code, experiments and learning journey.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <a href="https://github.com/sabujghorai"
-                   target="_blank"
-                   class="btn secondary-btn">
-
-                    Visit GitHub
+                    Contact Me
 
                 </a>
 
             </div>
 
-        </section>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+            <div class="social-icons">
+                <a href="https://github.com/sabujghorai"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-code"></i></a>
+                <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+        </div>
+
+        <!-- Profile Image -->
+
+        <div class="hero-image">
+
+            <img src="{{ url_for('static', filename='images/Profile_picture.jpeg') }}" alt="Sabuj Ghorai">
+        </div>
+
+    </section>
 
 
-        <!-- ================= JOURNEY ================= -->
+    <!-- ABOUT SECTION -->
 
-        <section class="section journey-section" id="journey">
+    <section id="about" class="about">
 
-            <div class="section-heading">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
 
-                <p>04 — JOURNEY</p>
+        <div class="about-container">
 
-                <h2>
-                    My learning
-                    <span>journey.</span>
-                </h2>
+
+
+            <!-- Left Side -->
+
+            <div class="about-image">
+
+                <img src="{{ url_for('static', filename='images/Profile_picture.jpeg') }}" alt="About Me">
 
             </div>
 
+            <!-- Right Side -->
 
-            <div class="timeline">
+            <div class="about-content">
 
+                <h3>Hello 👋</h3>
 
-                <div class="timeline-item">
+                <p>
 
-                    <div class="timeline-dot"></div>
+                    I am <strong>Sabuj Ghorai</strong>, a Computer Science student
+                    passionate about Software Development, Python,
+                    Artificial Intelligence, Cloud Computing and MLOps.
 
-                    <div class="timeline-content">
+                </p>
 
-                        <span>2025</span>
+                <p>
 
-                        <h3>
-                            Started Computer Science Journey
-                        </h3>
+                    I love building real-world projects and continuously
+                    improving my programming skills through daily practice.
 
-                        <p>
-                            Began B.Tech in Computer Science Engineering
-                            and started building a strong programming foundation.
-                        </p>
+                </p>
 
-                    </div>
+                <p>
 
-                </div>
+                    My goal is to become an MLOps Engineer and contribute
+                    to innovative AI solutions while learning modern cloud technologies.
 
+                </p>
 
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span>2026</span>
-
-                        <h3>
-                            Python & Data Structures
-                        </h3>
-
-                        <p>
-                            Focused on Python, NumPy, SQL,
-                            Data Structures and algorithmic problem solving.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span>2026</span>
-
-                        <h3>
-                            DevOps & Cloud
-                        </h3>
-
-                        <p>
-                            Started exploring Git, Linux, Docker,
-                            cloud technologies and deployment workflows.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="timeline-item">
-
-                    <div class="timeline-dot"></div>
-
-                    <div class="timeline-content">
-
-                        <span>Future</span>
-
-                        <h3>
-                            MLOps Engineer
-                        </h3>
-
-                        <p>
-                            Building expertise in machine learning,
-                            cloud infrastructure, automation and production ML systems.
-                        </p>
-
-                    </div>
-
-                </div>
-
+                <a href="#" class="btn-primary">
+                    Download Resume
+                </a>
 
             </div>
 
-        </section>
+        </div>
+
+    </section>
+
+    <!--    STATS  -->
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <h2>60+</h2>
+
+            <p>Days of Python Learning</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>8+</h2>
+
+            <p>MLOps Journey</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>15+</h2>
+
+            <p>GitHub Projects</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>100%</h2>
+
+            <p>Learning Every Day</p>
+
+        </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+
+    <section class="education">
+
+        <div class="section-title">
+
+            <h2>Education</h2>
 
 
-        <!-- ================= CONTACT ================= -->
+            <p>Academic Background</p>
 
-        <section class="section contact-section" id="contact">
+        </div>
 
-            <div class="contact-box">
+    </section>
 
-                <div class="contact-text">
+    <!-- TECH STACK  -->
+    <section class="tech-stack">
 
-                    <p class="section-label">
-                        05 — CONTACT
-                    </p>
+        <div class="section-title">
 
-                    <h2>
-                        Let's build something
-                        <span>meaningful.</span>
-                    </h2>
+            <h2>Tech Stack</h2>
 
-                    <p>
-                        I'm always interested in learning,
-                        collaborating and working on interesting
-                        technology projects.
-                    </p>
+            <p>Technologies I Work With</p>
 
-                    <a href="mailto:ghoraisabuj4@gmail.com"
-                       class="email-link">
+        </div>
 
-                        <i class="fa-solid fa-envelope"></i>
+        <div class="tech-grid">
 
-                        ghoraisabuj4@gmail.com
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='python.png') }}" alt="Python">
+                <h4>Python</h4>
+            </div>
 
-                    </a>
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='html.png') }}" alt="HTML">
+                <h4>HTML</h4>
+            </div>
 
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='css.png') }}" alt="CSS">
+                <h4>CSS</h4>
+            </div>
+
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='javascript.png') }}" alt="JavaScript">
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='git.png') }}" alt="Git">
+                <h4>Git</h4>
+            </div>
+
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='github.png') }}" alt="GitHub">
+                <h4>GitHub</h4>
+            </div>
+
+            <div class="tech-card">
+                <img src="{{ url_for('icons', filename='linux.png') }}" alt="Linux">
+                <h4>Linux</h4>
+            </div>
+
+            <div class="tech-card">
+                <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65">
+                <h4>Docker</h4>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+
+    <section id="skills" class="skills">
+
+        <div class="section-title">
+            <h2>My Skills</h2>
+            <p>Technologies I'm learning and using</p>
+        </div>
+
+        <div class="skills-container">
+
+            <!-- Technical Skills -->
+
+            <div class="skills-card">
+
+                <h3>Programming</h3>
+
+                <div class="skill">
+                    <span>Python <b>85%</b></span>
+                    <progress value="85" max="100"></progress>
                 </div>
 
+                <div class="skill">
+                    <span>HTML</span>
+                    <progress value="95" max="100"></progress>
+                </div>
 
-                <div class="contact-links">
+                <div class="skill">
+                    <span>CSS</span>
+                    <progress value="90" max="100"></progress>
+                </div>
 
-                    <a href="https://github.com/sabujghorai"
-                       target="_blank">
-
-                        <i class="fa-brands fa-github"></i>
-
-                        <span>GitHub</span>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-
-                    <a href="https://www.linkedin.com/in/sabuj-ghorai/"
-                       target="_blank">
-
-                        <i class="fa-brands fa-linkedin"></i>
-
-                        <span>LinkedIn</span>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
-
-                    <a href="https://leetcode.com/u/sabuj_ghorai/"
-                       target="_blank">
-
-                        <i class="fa-solid fa-code"></i>
-
-                        <span>LeetCode</span>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                    </a>
-
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <progress value="70" max="100"></progress>
                 </div>
 
             </div>
 
-        </section>
+            <!-- Development -->
 
-    </main>
+            <div class="skills-card">
 
+                <h3>Development</h3>
 
-    <!-- ================= FOOTER ================= -->
+                <div class="skill">
+                    <span>Git & GitHub</span>
+                    <progress value="85" max="100"></progress>
+                </div>
 
-    <footer>
+                <div class="skill">
+                    <span>Linux</span>
+                    <progress value="75" max="100"></progress>
+                </div>
 
-        <div class="footer-container">
+                <div class="skill">
+                    <span>Docker</span>
+                    <progress value="45" max="100"></progress>
+                </div>
+
+                <div class="skill">
+                    <span>Kubernetes</span>
+                    <progress value="20" max="100"></progress>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Learning Journy -->
+
+    <section id="journey" class="journey">
+
+        <div class="section-title">
+            <h2>Learning Journey</h2>
+            <p>Consistency beats talent</p>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <span class="date">Python Journey</span>
+
+                <h3>180 Days Python Challenge</h3>
+
+                <p>
+
+                    Learning Python every day with a focus on
+                    Data Structures & Algorithms,
+                    NumPy,
+                    problem solving,
+                    and interview preparation.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span class="date">MLOps Journey</span>
+
+                <h3>365 Days MLOps Roadmap</h3>
+
+                <p>
+
+                    Learning Linux,
+                    Docker,
+                    Kubernetes,
+                    AWS,
+                    CI/CD,
+                    Terraform,
+                    Monitoring,
+                    and Machine Learning deployment.
+
+                </p>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <span class="date">Web Development</span>
+
+                <h3>Frontend Development</h3>
+
+                <p>
+
+                    Building responsive websites using
+                    HTML,
+                    CSS,
+                    JavaScript,
+                    and modern UI/UX practices.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- EXPERIENCE  -->
+
+    <section class="experience">
+
+        <div class="section-title">
+            <h2>Experience</h2>
+            <p>What I'm currently doing</p>
+        </div>
+
+        <div class="experience-card">
+
+            <h3>Computer Science Student</h3>
+
+            <span>2025 - Present</span>
 
             <p>
-                © 2026 Sabuj Ghorai. Built with code & curiosity.
-            </p>
 
-            <p>
-                B.Tech CSE • Aspiring MLOps Engineer
+                Currently focused on learning Python,
+                Web Development,
+                Data Structures & Algorithms,
+                Cloud Computing,
+                DevOps,
+                and MLOps while building practical projects.
+
             </p>
 
         </div>
 
-    </footer>
+        <div class="experience-card">
 
+            <h3>Open Source Learner</h3>
 
-    <script>
+            <span>GitHub</span>
 
-        const menuBtn = document.getElementById("menu-btn");
-        const navMenu = document.getElementById("nav-menu");
+            <p>
 
-        menuBtn.addEventListener("click", () => {
+                Maintaining multiple repositories,
+                contributing daily,
+                documenting projects,
+                and continuously improving coding skills.
 
-            navMenu.classList.toggle("open");
+            </p>
 
-        });
+        </div>
 
+    </section>
 
-        document.querySelectorAll("#nav-menu a").forEach(link => {
+    <!-- CERTIFICATES  -->
 
-            link.addEventListener("click", () => {
+    <section class="certificates">
 
-                navMenu.classList.remove("open");
+        <div class="section-title">
 
-            });
+            <h2>Certificates</h2>
 
-        });
+            <p>Achievements & Certifications</p>
 
+        </div>
 
-        window.addEventListener("scroll", () => {
+        <div class="project-grid">
 
-            const navbar = document.querySelector(".navbar");
+    <div class="project-card">
 
-            if (window.scrollY > 50) {
+        <img src="{{ url_for('featured_projects', filename='netflix_clone.jpeg') }}" alt="Netflix Clone">
 
-                navbar.classList.add("scrolled");
+        <div class="project-content">
+            <h3>Netflix Clone</h3>
+            <p>
+                Responsive Netflix landing page built using HTML and CSS.
+            </p>
 
-            } else {
+            <a href="#">Live Demo</a>
+            <a href="https://github.com/sabujghorai/HTML/tree/main/NETFLIX_CLONE">GitHub</a>
+        </div>
 
-                navbar.classList.remove("scrolled");
+    </div>
 
-            }
+    <div class="project-card">
 
-        });
+        <img src="{{ url_for('featured_projects', filename='python_image.jpeg') }}" alt="Python DSA">
 
-    </script>
+        <div class="project-content">
+            <h3>Python DSA Repository</h3>
+            <p>
+                Collection of Data Structures and Algorithms implemented in Python.
+            </p>
 
+            <a href="https://github.com/sabujghorai/DATA-STRUCTURE-PYTHON">GitHub</a>
+        </div>
+
+    </div>
+
+    <div class="project-card">
+
+        <img src="{{ url_for('featured_projects', filename='linux.jpeg') }}" alt="Linux Repository">
+
+        <div class="project-content">
+            <h3>Linux Commands Repository</h3>
+            <p>
+                Linux commands and notes for DevOps & MLOps learning.
+            </p>
+
+            <a href="https://github.com/sabujghorai/LINUX">GitHub</a>
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- GITHUB  -->
+
+    <section class="github">
+
+        <div class="section-title">
+
+            <h2>GitHub Activity</h2>
+
+            <p>My coding journey</p>
+
+        </div>
+
+        <div class="github-container">
+
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=sabujghorai&theme=radical"
+                alt="GitHub Stats" />
+
+            <img src="https://github-readme-activity-graph.vercel.app/graph?username=sabujghorai&theme=react-dark&hide_border=true"
+                alt="COntribution Graph" />
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT  -->
+
+    <section id="contact" class="contact">
+
+        <div class="section-title">
+
+            <h2>Contact Me</h2>
+
+            <p>Let's work together</p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Left -->
+
+            <div class="contact-info">
+
+                <h3>Get In Touch</h3>
+
+                <p>
+
+                    Feel free to contact me for internships,
+                    freelance work, collaborations,
+                    or exciting projects.
+
+                </p>
+
+                <p>📧 Email : ghoraisabuj4@gmail.com</p>
+
+                <p>📱 Phone : +91 7501131646</p>
+
+                <p>📍 Kolkata, India</p>
+
+            </div>
+
+            <!-- Right -->
+
+            <form action="/contact" method="POST">
+
+                <input type="text" name="name" placeholder="Your Name" required>
+
+                <input type="email" name="email" placeholder="Your Email" required>
+
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="github-container">
+            <img
+                src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=2000&color=A9FEF7&center=true&vCenter=true&width=940&lines=Thanks+for+visiting!+Let's+build+something+awesome+🚀" />
+        </div>
+
+    </section>
+
+    <!-- FOOTER  -->
+    <a href="#home" class="top-btn">
+        ↑
+    </a>
+
+    <!-- JavaScript -->
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
