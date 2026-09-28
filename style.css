@@ -131,7 +131,6 @@ section {
 }
 
 .navbar::before{
-
     content:"";
     position:absolute;
     inset:-1px;
