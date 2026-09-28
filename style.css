@@ -124,9 +124,8 @@ section {
     -webkit-backdrop-filter:blur(22px);
     border:1px solid rgba(255,255,255,.08);
     box-shadow:
-        0 10px 40px rgba(0,0,0,.35),
-        inset 0 1px rgba(255,255,255,.08);
-
+    0 10px 40px rgba(0,0,0,.35),
+    inset 0 1px rgba(255,255,255,.08);
     transition:.35s;
 }
 .navbar::before{
