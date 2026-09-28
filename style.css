@@ -510,7 +510,6 @@ body::before {
 }
 
 .btn-primary:hover {
-
     transform: translateY(-4px);
     box-shadow: 0 0 35px rgba(139, 92, 246, .65);
 
