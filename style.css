@@ -130,7 +130,6 @@ section {
     transition:.35s;
 }
 
-
 .navbar::before{
 
     content:"";
