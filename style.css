@@ -227,7 +227,6 @@ section {
 }
 
 /* Active Link */
-
 .nav-menu a.active{
     color:#fff;
     background:linear-gradient(
