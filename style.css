@@ -443,7 +443,6 @@ body::before {
     margin-bottom: 15px;
     font-weight: 800;
     font-family: "Sora", sans-serif;
-
     background: linear-gradient(90deg, #22d3ee, #e58cf6, #b683ea);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
