@@ -3,158 +3,166 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sabuj Ghorai | Cloud &amp; MLOps Portfolio</title>
-<meta name="description" content="Sabuj Ghorai — Computer Science student from Kolkata building towards Cloud and MLOps engineering. Python, DSA, Web, AWS, Docker, Kubernetes.">
+<title>Sabuj Ghorai — Cloud &amp; MLOps</title>
+<meta name="description" content="Sabuj Ghorai — Computer Science student from Kolkata becoming a Cloud and MLOps engineer. Python, DSA, SQL, AWS, Docker, Kubernetes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="/favicon.png?v=3">
 </head>
 <body>
 
-<div class="preload" id="preload"><div><b>SG</b><i></i></div></div>
-<div id="progress"></div>
-<div class="cursor"></div>
-<div class="aurora"></div>
-<canvas id="snow"></canvas>
-<div class="grain"></div>
+<div class="loader" id="loader">
+  <div class="ld-name">SABUJ GHORAI</div>
+  <div class="ld-n"><span id="ldn">0</span><em>%</em></div>
+  <div class="ld-bar"><i id="ldb"></i></div>
+</div>
 
-<nav>
-  <a href="#home" class="logo"><i>SG</i><span>Sabuj<b>Ghorai</b></span></a>
-  <div class="links">
+<canvas id="scene"></canvas>
+<div class="veil"></div>
+<div class="grain"></div>
+<div class="cursor" id="cursor"><i></i></div>
+<div id="progress"></div>
+
+<header class="top">
+  <a href="#home" class="brand">SG<span>/ portfolio</span></a>
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#journey">Roadmap</a>
+    <a href="#roadmap">Roadmap</a>
     <a href="#projects">Projects</a>
     <a href="#github">GitHub</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <a href="#contact" class="hl">Contact</a>
+  </nav>
+  <div class="clock"><b></b> Kolkata <span id="clock">--:--</span></div>
+</header>
 
 <main>
-<section id="home">
-  <div class="wrap hero">
-    <div>
-      <div class="pill" data-r><span class="dot"></span> Open to remote &amp; on-site internships · 2026</div>
-      <h1 class="split" data-split><span class="g">Sabuj Ghorai</span></h1>
-      <div class="roles" data-r>Python Developer<span>•</span>Web Developer<span>•</span>Cloud &amp; MLOps Engineer <span>(2027)</span></div>
-      <p class="lead" data-r>Computer Science student from Kolkata, India. I solve DSA problems, build full-stack projects and learn AWS, Docker and Kubernetes every day, so I can ship machine-learning systems to production.</p>
-      <div class="cta" data-r>
-        <a href="#projects" class="btn primary mag">View Projects →</a>
-        <a href="#contact" class="btn ghost mag">Contact Me</a>
-      </div>
-      <div class="socials" data-r>
-        <a href="https://github.com/sabujghorai" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-        <a href="https://www.linkedin.com/in/sabuj-ghorai/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-        <a href="https://leetcode.com/u/__SabujGhorai__/" target="_blank" rel="noopener" aria-label="LeetCode">LC</a>
-        <a href="mailto:ghoraisabuj4@gmail.com" aria-label="Email">@</a>
-      </div>
-    </div>
-    <div class="avatar" data-r>
-      <div class="halo"></div>
-      <img src="image/sabuj_ghoai.jpeg" alt="Sabuj Ghorai">
-      <span class="chip c1">python · dsa</span>
-      <span class="chip c2">docker · k8s</span>
-      <span class="chip c3">aws · mlops</span>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-in">
+    <div class="tag" data-r><span class="dot"></span> Open to internships · Remote &amp; on-site · 2026</div>
+    <h1>
+      <span class="ln"><span class="ln-i">SABUJ</span></span>
+      <span class="ln o"><span class="ln-i">GHORAI</span></span>
+    </h1>
+    <p class="sub" data-r>Computer Science student from Kolkata becoming a <b>Cloud &amp; MLOps Engineer</b>. I write Python, solve DSA, build for the web and learn to ship machine learning at scale.</p>
+    <div class="row" data-r>
+      <a href="#projects" class="btn solid mag">See my work <i>→</i></a>
+      <a href="#contact" class="btn line mag">Get in touch</a>
     </div>
   </div>
-  <div class="scroll-cue">SCROLL</div>
-</section>
-
-<div class="marquee"><div>
-  <span>PYTHON</span><span>DSA</span><span>SQL</span><span>WEB DEV</span><span>LINUX</span><span>DOCKER</span><span>KUBERNETES</span><span>AWS</span><span>CI/CD</span><span>MLOPS</span>
-  <span>PYTHON</span><span>DSA</span><span>SQL</span><span>WEB DEV</span><span>LINUX</span><span>DOCKER</span><span>KUBERNETES</span><span>AWS</span><span>CI/CD</span><span>MLOPS</span>
-</div></div>
-
-<section id="about" data-tone="210">
-  <div class="wrap about">
-    <div>
-      <div class="eyebrow" data-r>01 — About</div>
-      <h2 class="split" data-split>Building today for the <em>cloud</em> of tomorrow.</h2>
-      <p class="lead" data-r>I'm Sabuj, a Computer Science student from West Bengal, passionate about software development, Python, web development and MLOps.</p>
-      <p class="lead" data-r>Right now I'm building a strong DSA foundation, shipping real projects, learning SQL and exploring AWS, with the goal of landing a software engineering internship and becoming a Cloud &amp; MLOps Engineer.</p>
-      <p class="lead quote" data-r>“Automate everything. Measure what matters. Build for scale. Optimize continuously.”</p>
-    </div>
-    <div class="stats" data-r>
-      <div class="stat"><b data-count="2777">0</b><small>GitHub contributions</small></div>
-      <div class="stat"><b data-count="57">0</b><small>Day longest streak</small></div>
-      <div class="stat"><b data-count="10" data-plus>0</b><small>Public repositories</small></div>
-      <div class="stat"><b data-count="450" data-plus>0</b><small>DSA problems goal</small></div>
-    </div>
+  <div class="hero-foot">
+    <span>Python · DSA · SQL · AWS · Docker · K8s</span>
+    <span class="cue">Scroll to descend</span>
+    <span>Target 2027 — MLOps</span>
   </div>
 </section>
 
-<section id="skills" data-tone="195">
+<!-- ABOUT -->
+<section class="about" id="about">
   <div class="wrap">
-    <div class="eyebrow" data-r>02 — Skills</div>
-    <h2 class="split" data-split>My <em>toolkit</em></h2>
-    <div class="skills">
-      <div class="card tilt" data-r><span class="ic">// 01</span><h3>Python &amp; DSA</h3><p>Clean Python, problem solving and data structures for interviews.</p>
-        <div class="tags"><span>Python</span><span>DSA</span><span>LeetCode</span></div><div class="bar"><i style="--w:80%"></i></div></div>
-      <div class="card tilt" data-r><span class="ic">// 02</span><h3>Web Development</h3><p>Responsive, animated websites and full-stack apps.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="bar"><i style="--w:78%"></i></div></div>
-      <div class="card tilt" data-r><span class="ic">// 03</span><h3>SQL &amp; Databases</h3><p>Querying, designing and managing relational databases.</p>
-        <div class="tags"><span>SQL</span><span>MySQL</span></div><div class="bar"><i style="--w:72%"></i></div></div>
-      <div class="card tilt" data-r><span class="ic">// 04</span><h3>Linux &amp; Git</h3><p>Terminal, shell workflows and daily version control.</p>
-        <div class="tags"><span>Linux</span><span>Git</span><span>GitHub</span></div><div class="bar"><i style="--w:70%"></i></div></div>
-      <div class="card tilt" data-r><span class="ic">// 05</span><h3>Docker &amp; Kubernetes</h3><p>Containers and orchestration, learning step by step.</p>
-        <div class="tags"><span>Docker</span><span>Kubernetes</span></div><div class="bar"><i style="--w:50%"></i></div></div>
-      <div class="card tilt" data-r><span class="ic">// 06</span><h3>AWS &amp; MLOps</h3><p>Cloud, CI/CD and ML deployment with monitoring.</p>
-        <div class="tags"><span>AWS</span><span>MLflow</span><span>FastAPI</span></div><div class="bar"><i style="--w:40%"></i></div></div>
+    <div class="eyebrow" data-r>01 — About</div>
+    <p class="statement" id="statement">I am Sabuj, a Computer Science student who believes in consistency over intensity. I code every day, build real projects, practise DSA for interviews and learn the cloud stack step by step. My goal is simple: automate everything, measure what matters, build for scale and ship machine learning to production as a Cloud and MLOps Engineer.</p>
+
+    <div class="about-grid">
+      <figure class="ph" data-r>
+        <img src="image/sabuj_ghoai.jpeg" alt="Sabuj Ghorai">
+        <figcaption><span>Sabuj Ghorai</span><span>Kolkata, IN</span></figcaption>
+      </figure>
+      <div class="stats">
+        <div class="stat" data-r><b data-count="2777">0</b><small>GitHub contributions since May 2025</small></div>
+        <div class="stat" data-r><b data-count="57">0</b><small>Day longest coding streak</small></div>
+        <div class="stat" data-r><b data-count="10" data-plus>0</b><small>Public repositories</small></div>
+        <div class="stat" data-r><b data-count="450" data-plus>0</b><small>DSA problems — the goal</small></div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="journey" data-tone="225">
-  <div class="wrap">
-    <div class="eyebrow" data-r>03 — Roadmap</div>
-    <h2 class="split" data-split>2026 <em>→ 2027</em></h2>
-    <div class="timeline">
-      <div class="fill"></div>
-      <div class="step" data-r><small>DONE</small><h3>Python, SQL &amp; responsive web projects</h3><p>Fundamentals of Python and databases, plus several responsive websites.</p></div>
-      <div class="step" data-r><small>NOW</small><h3>DSA, full-stack &amp; AWS basics</h3><p>450+ DSA problems, React + Python projects and preparing for AWS Cloud Practitioner.</p></div>
-      <div class="step" data-r><small>NEXT</small><h3>Certifications &amp; containers</h3><p>AWS Cloud Practitioner and Solutions Architect Associate, then Docker and Kubernetes.</p></div>
-      <div class="step" data-r><small>THEN</small><h3>CI/CD &amp; MLOps</h3><p>GitHub Actions, Jenkins, MLflow, FastAPI. End-to-end AI and cloud projects, open source and a SWE internship.</p></div>
-      <div class="step" data-r><small>GOAL · 2027</small><h3>Cloud &amp; MLOps Engineer</h3><p>Shipping machine-learning systems to production, reliably and at scale.</p></div>
+<!-- SKILLS : horizontal pinned scroll -->
+<section class="hs" id="skills">
+  <div class="hs-pin">
+    <div class="hs-head">
+      <div class="eyebrow">02 — Skills</div>
+      <h2 class="split" data-split>The stack I'm <em>building</em></h2>
+    </div>
+    <div class="hs-track" id="track">
+      <article class="sk"><span>01</span><h3>Python &amp; DSA</h3><p>Clean Python and problem solving for coding interviews.</p><div class="tg"><i>Python</i><i>DSA</i><i>LeetCode</i></div><div class="lv"><u style="--w:80%"></u></div></article>
+      <article class="sk"><span>02</span><h3>Web Development</h3><p>Responsive, animated sites and full-stack apps with React and Python.</p><div class="tg"><i>HTML</i><i>CSS</i><i>JavaScript</i></div><div class="lv"><u style="--w:78%"></u></div></article>
+      <article class="sk"><span>03</span><h3>SQL &amp; Databases</h3><p>Designing, querying and managing relational databases.</p><div class="tg"><i>SQL</i><i>MySQL</i></div><div class="lv"><u style="--w:72%"></u></div></article>
+      <article class="sk"><span>04</span><h3>Linux &amp; Git</h3><p>Terminal-first workflow with daily version control.</p><div class="tg"><i>Linux</i><i>Git</i><i>GitHub</i></div><div class="lv"><u style="--w:70%"></u></div></article>
+      <article class="sk"><span>05</span><h3>Docker &amp; Kubernetes</h3><p>Containers today, orchestration next.</p><div class="tg"><i>Docker</i><i>Kubernetes</i></div><div class="lv"><u style="--w:50%"></u></div></article>
+      <article class="sk"><span>06</span><h3>AWS &amp; MLOps</h3><p>Cloud, CI/CD and ML deployment with monitoring.</p><div class="tg"><i>AWS</i><i>MLflow</i><i>FastAPI</i></div><div class="lv"><u style="--w:40%"></u></div></article>
     </div>
   </div>
 </section>
 
-<section id="projects" data-tone="200">
+<!-- ROADMAP -->
+<section class="road" id="roadmap">
+  <div class="wrap road-grid">
+    <div class="road-side">
+      <div class="eyebrow" data-r>03 — Roadmap</div>
+      <h2 class="split" data-split>2026 <em>→ 2027</em></h2>
+      <p class="mut" data-r>From Python fundamentals to production MLOps, one milestone at a time.</p>
+    </div>
+    <ol class="steps" id="steps">
+      <li class="done"><small>Completed</small><h3>Python fundamentals</h3></li>
+      <li class="done"><small>Completed</small><h3>SQL &amp; database management</h3></li>
+      <li class="done"><small>Completed</small><h3>Responsive web projects</h3></li>
+      <li class="now"><small>In progress</small><h3>DSA — 450+ problems</h3></li>
+      <li class="now"><small>In progress</small><h3>Full-stack projects (React + Python)</h3></li>
+      <li class="now"><small>In progress</small><h3>AWS Cloud — Practitioner prep</h3></li>
+      <li><small>Planned</small><h3>AWS Cloud Practitioner &amp; Solutions Architect</h3></li>
+      <li><small>Planned</small><h3>Docker &amp; Kubernetes</h3></li>
+      <li><small>Planned</small><h3>CI/CD — GitHub Actions &amp; Jenkins</h3></li>
+      <li><small>Planned</small><h3>MLOps — MLflow, Docker, K8s, FastAPI</h3></li>
+      <li><small>Planned</small><h3>End-to-end AI &amp; cloud projects · open source</h3></li>
+      <li class="goal"><small>Target · 2027</small><h3>Cloud &amp; MLOps Engineer</h3></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="proj" id="projects">
   <div class="wrap">
     <div class="eyebrow" data-r>04 — Projects</div>
     <h2 class="split" data-split>Selected <em>work</em></h2>
-    <div class="projects">
-      <a class="proj" data-r href="https://github.com/sabujghorai/Peronal-Portfolio"><div class="n">01</div><div><h3>Portfolio Website</h3><p>This site: an icy, animated portfolio with inertia scroll, built with HTML, CSS and JavaScript.</p></div><div class="go">→</div></a>
-      <a class="proj" data-r href="https://github.com/sabujghorai/Netflix-clone"><div class="n">02</div><div><h3>Netflix Clone</h3><p>Responsive streaming-style landing, sign-in and get-started pages in HTML, CSS and JS.</p></div><div class="go">→</div></a>
-      <a class="proj" data-r href="https://github.com/sabujghorai"><div class="n">03</div><div><h3>More on GitHub</h3><p>10+ public repositories across Python, web and cloud. Add your best one here.</p></div><div class="go">→</div></a>
+    <div class="pj-list">
+      <a class="pj" data-r href="https://github.com/sabujghorai/Peronal-Portfolio" target="_blank" rel="noopener"><span class="n">01</span><div><h3>Portfolio Website</h3><p>This site — an ice-world scroll experience in HTML, CSS and JavaScript.</p></div><span class="ar">↗</span></a>
+      <a class="pj" data-r href="https://github.com/sabujghorai" target="_blank" rel="noopener"><span class="n">02</span><div><h3>Netflix Clone</h3><p>Responsive landing, sign-in and get-started pages.</p></div><span class="ar">↗</span></a>
+      <a class="pj" data-r href="https://github.com/sabujghorai" target="_blank" rel="noopener"><span class="n">03</span><div><h3>More on GitHub</h3><p>10+ public repositories across Python, web and cloud.</p></div><span class="ar">↗</span></a>
     </div>
   </div>
 </section>
 
-<section id="github" data-tone="215">
-  <div class="wrap gh">
+<!-- GITHUB -->
+<section class="gh" id="github">
+  <div class="wrap gh-grid">
     <div>
       <div class="eyebrow" data-r>05 — GitHub</div>
       <h2 class="split" data-split>Code, <em>every day.</em></h2>
-      <p class="lead" data-r>2,777 contributions since May 2025, a 57-day longest streak, and the Pull Shark and Quickdraw badges. Consistency beats intensity.</p>
-      <div class="cta" style="margin-top:30px" data-r><a class="btn primary mag" target="_blank" rel="noopener" href="https://github.com/sabujghorai">Visit my GitHub →</a></div>
+      <p class="mut" data-r>Pull Shark and Quickdraw badges, a 57-day streak and open repositories for anyone to explore.</p>
+      <a class="btn solid mag" data-r target="_blank" rel="noopener" href="https://github.com/sabujghorai">Visit GitHub <i>→</i></a>
     </div>
     <div class="heat" id="heat" data-r></div>
   </div>
 </section>
 
-<section id="contact" data-tone="190">
+<!-- CONTACT -->
+<section class="contact" id="contact">
   <div class="wrap">
-    <div class="eyebrow" style="justify-content:center" data-r>06 — Contact</div>
-    <h2 class="split" data-split>Let's build something <em>great</em> together.</h2>
-    <p class="lead" data-r>Looking for a Software Engineering, Cloud or MLOps internship? Remote or on-site, I'd love to hear from you.</p>
+    <div class="eyebrow c" data-r>06 — Contact</div>
+    <h2 class="split big" data-split>Let's build something <em>great.</em></h2>
+    <p class="mut c" data-r>Software Engineering, Cloud or MLOps internship? I'd love to hear from you.</p>
     <a class="mail" data-r href="mailto:ghoraisabuj4@gmail.com">ghoraisabuj4@gmail.com</a>
-    <div class="socials center" data-r>
-      <a href="https://www.linkedin.com/in/sabuj-ghorai/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-      <a href="https://leetcode.com/u/__SabujGhorai__/" target="_blank" rel="noopener" aria-label="LeetCode">LC</a>
-      <a href="https://www.instagram.com/https.avi_1819/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+    <div class="socs" data-r>
+      <a class="mag" href="https://www.linkedin.com/in/sabuj-ghorai/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="mag" href="https://github.com/sabujghorai" target="_blank" rel="noopener">GitHub</a>
+      <a class="mag" href="https://leetcode.com/u/__SabujGhorai__/" target="_blank" rel="noopener">LeetCode</a>
+      <a class="mag" href="https://www.instagram.com/https.avi_1819/" target="_blank" rel="noopener">Instagram</a>
     </div>
   </div>
 </section>
