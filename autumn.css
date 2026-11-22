@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap");
+
+/* =========================================================
+   AUTUMN THEME — load this AFTER style.css
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="autumn.css">
+   ========================================================= */
+
+:root {
+    --bg: #1c0d06;
+    --ice: #fff4e6;
+    --ice2: #ffc48a;
+    --ice3: #ff7a3c;
+    --muted: #ffe9d2;
+    --line: rgba(255, 196, 138, .30);
+    --glass: rgba(62, 20, 8, .42);
+    --display: "Fraunces", Georgia, serif;
+    --body: "Inter", system-ui, sans-serif;
+    --ink: #2a0e04;
+}
+
+/* ---------- sky ---------- */
+body {
+    background: linear-gradient(180deg, #0c5ad0 0%, #2a8cf0 36%, #74bcff 66%, #d4ecff 100%);
+    background-attachment: fixed;
+}
+
+::selection { background: #ff9a4a; color: #200800; }
+
+/* the old WebGL ice forest is switched off */
+#gl { display: none !important; }
+
+.veil {
+    background: radial-gradient(120% 90% at 40% 45%, transparent 55%, rgba(40, 14, 0, .28) 100%);
+}
+
+/* ---------- scene layers (created by autumn.js) ---------- */
+#sky {
+    position: fixed; inset: -6%; z-index: 0;
+    overflow: hidden; pointer-events: none;
+    will-change: transform;
+}
+
+.sun {
+    position: absolute; left: -8%; top: -12%;
+    width: 70vw; height: 70vw; border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(255, 246, 214, .6), rgba(255, 246, 214, 0));
+}
+
+.dusk {
+    position: absolute; inset: 0; opacity: 0;
+    background: linear-gradient(180deg, #4a1d5c 0%, #c9482b 52%, #ffb35c 100%);
+}
+
+.cloud {
+    position: absolute; left: 0;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(255, 255, 255, .95), rgba(255, 255, 255, .55) 55%, rgba(255, 255, 255, 0));
+    filter: blur(4px);
+    will-change: transform;
+    animation: drift linear infinite;
+}
+
+.streak {
+    position: absolute;
+    height: 5vw; border-radius: 50%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(220, 240, 255, .85) 40%, rgba(255, 255, 255, 0));
+    filter: blur(10px);
+    transform: rotate(-34deg);
+    opacity: .75;
+}
+
+@keyframes drift {
+    from { transform: translate3d(-45vw, 0, 0); }
+    to   { transform: translate3d(125vw, 0, 0); }
+}
+
+#hill {
+    position: fixed; left: -60px; bottom: 0; z-index: 0;
+    width: calc(100% + 120px); pointer-events: none; display: block;
+    will-change: transform;
+}
+
+#tree {
+    position: fixed; left: 0; bottom: 0; z-index: 1;
+    pointer-events: none; display: block;
+    will-change: transform;
+}
+
+@keyframes sway {
+    0%, 100% { transform: rotate(-.3deg); }
+    50%      { transform: rotate(.35deg); }
+}
+
+#fx {
+    position: fixed; inset: 0; z-index: 3;
+    width: 100%; height: 100%;
+    pointer-events: none; display: block;
+}
+
+/* ---------- sound button ---------- */
+.snd {
+    position: fixed; right: clamp(18px, 3vw, 40px); bottom: 26px; z-index: 95;
+    font-family: var(--mono, "JetBrains Mono", monospace);
+    font-size: .72rem; letter-spacing: .08em;
+    color: var(--ice);
+    padding: 10px 18px;
+    border: 1px solid var(--line); border-radius: 999px;
+    background: var(--glass);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    cursor: pointer;
+    transition: background .4s, color .4s;
+}
+.snd:hover { background: var(--ice); color: var(--ink); }
+
+/* ---------- type: readable on bright sky ---------- */
+h1, h2, .statement, .sub, .mut, .eyebrow, .sk h3, .sk p, .steps li h3, .pj h3, .pj p {
+    text-shadow: 0 2px 28px rgba(10, 40, 100, .55);
+}
+
+h1 {
+    text-transform: none;
+    font-weight: 600;
+    line-height: .9;
+    letter-spacing: -.045em;
+}
+h1 .ln-i { padding-bottom: .06em; }
+h1 .o .ln-i { -webkit-text-stroke: 1.5px var(--ice); }
+
+h2 { font-weight: 500; letter-spacing: -.03em; }
+h2 em { background: linear-gradient(90deg, #ffb06a, #fff4e6); -webkit-background-clip: text; background-clip: text; color: transparent; font-style: italic; }
+
+.sub { color: #fff4e6; }
+.mut { color: var(--muted); }
+
+/* ---------- warm replacements for hard-coded ice colours ---------- */
+#progress { background: linear-gradient(90deg, #ff7a3c, #fff4e6); box-shadow: 0 0 14px #ff9a4a; }
+
+.top nav a:hover, .top nav a.on { color: var(--ink); background: var(--ice); }
+.top nav a.hl { color: var(--ice2); }
+
+.btn.solid { color: var(--ink); box-shadow: 0 14px 50px -14px #ff7a3c; }
+.btn.line { background: rgba(62, 20, 8, .35); }
+.btn.line:hover { border-color: var(--ice2); background: rgba(255, 196, 138, .16); }
+
+.stat:hover, .sk:hover { border-color: rgba(255, 196, 138, .65); }
+.tg i { color: var(--ice2); }
+.lv { background: rgba(255, 196, 138, .16); }
+.lv u { background: linear-gradient(90deg, #ff7a3c, #fff4e6); box-shadow: 0 0 10px #ff9a4a; }
+
+.steps li.act::before { box-shadow: 0 0 0 6px rgba(255, 196, 138, .16), 0 0 20px var(--ice2); }
+.steps li.goal h3 { background: linear-gradient(90deg, #ff9a4a, #fff4e6); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+.pj::before { background: linear-gradient(90deg, rgba(255, 122, 60, .24), transparent); }
+.pj:hover .ar { background: var(--ice); color: var(--ink); }
+
+.heat i { background: rgba(255, 196, 138, .12); }
+
+.socs a:hover { background: var(--ice); color: var(--ink); border-color: var(--ice); }
+.mail:hover { color: var(--ice2); }
+
+footer { background: rgba(40, 12, 4, .65); }
+
+.loader { background: var(--bg); }
+.ld-n em { color: #ff7a3c; }
+
+@media (prefers-reduced-motion: reduce) {
+    .cloud, #tree { animation: none !important; }
+}
